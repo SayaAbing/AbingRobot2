@@ -1,4 +1,4 @@
-from SiestaRobot.modules.disable import (
+from AbingRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
@@ -9,11 +9,11 @@ from telegram.ext import (
     InlineQueryHandler,
 )
 from telegram.ext.filters import MessageFilter
-from SiestaRobot import dispatcher as d, LOGGER
+from AbingRobot import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
-class SiestaHandler:
+class AbingHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -172,7 +172,7 @@ class SiestaHandler:
         return _inlinequery
 
 
-siestacmd = SiestaHandler(d).command
-siestamsg = SiestaHandler(d).message
-siestacallback = SiestaHandler(d).callbackquery
-siestainline = SiestaHandler(d).inlinequery
+abingcmd = AbingHandler(d).command
+abingmsg = AbingHandler(d).message
+abingcallback = AbingHandler(d).callbackquery
+abinginline = AbingHandler(d).inlinequery
