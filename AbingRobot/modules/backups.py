@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import SiestaRobot.modules.sql.notes_sql as sql
-from SiestaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from SiestaRobot.__main__ import DATA_IMPORT
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin
-from SiestaRobot.modules.helper_funcs.alternate import typing_action
+import AbingRobot.modules.sql.notes_sql as sql
+from AbingRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from AbingRobot.__main__ import DATA_IMPORT
+from AbingRobot.modules.helper_funcs.chat_status import user_admin
+from AbingRobot.modules.helper_funcs.alternate import typing_action
 
-# from SiestaRobot.modules.rules import get_rules
-import SiestaRobot.modules.sql.rules_sql as rulessql
+# from AbingRobot.modules.rules import get_rules
+import AbingRobot.modules.sql.rules_sql as rulessql
 
-# from SiestaRobot.modules.sql import warns_sql as warnssql
-import SiestaRobot.modules.sql.blacklist_sql as blacklistsql
-from SiestaRobot.modules.sql import disable_sql as disabledsql
+# from AbingRobot.modules.sql import warns_sql as warnssql
+import AbingRobot.modules.sql.blacklist_sql as blacklistsql
+from AbingRobot.modules.sql import disable_sql as disabledsql
 
-# from SiestaRobot.modules.sql import cust_filters_sql as filtersql
-# import SiestaRobot.modules.sql.welcome_sql as welcsql
-import SiestaRobot.modules.sql.locks_sql as locksql
-from SiestaRobot.modules.connection import connected
+# from AbingRobot.modules.sql import cust_filters_sql as filtersql
+# import AbingRobot.modules.sql.welcome_sql as welcsql
+import AbingRobot.modules.sql.locks_sql as locksql
+from AbingRobot.modules.connection import connected
 
 
 @user_admin
