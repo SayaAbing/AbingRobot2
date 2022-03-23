@@ -9,10 +9,10 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from SiestaRobot import dispatcher, pbot
+from AbingRobot import dispatcher, pbot
 from pyrogram import filters
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.language import gs
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.language import gs
 
 
 def helps(chat):
