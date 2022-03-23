@@ -1,8 +1,8 @@
 import os
 import cv2
 from PIL import Image
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot
+from AbingRobot.events import register
+from AbingRobot import telethn as tbot
 
 
 @register(pattern="^/tiny ?(.*)")
@@ -13,7 +13,7 @@ async def _(event):
            return
     kontol = await event.reply("`Processing tiny...`")
     ik = await tbot.download_media(reply)
-    im1 = Image.open("SiestaRobot/resources/siesta_stickers.png")
+    im1 = Image.open("AbingRobot/resources/abing_stickers.png")
     if ik.endswith(".tgs"):
         await tbot.download_media(reply, "ken.tgs")
         os.system("lottie_convert.py ken.tgs json.json")
