@@ -5,11 +5,11 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler
 
-import SiestaRobot.modules.sql.connection_sql as sql
-from SiestaRobot import dispatcher, DRAGONS, DEV_USERS
-from SiestaRobot.modules.helper_funcs import chat_status
-from SiestaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SiestaRobot.modules.language import gs
+import AbingRobot.modules.sql.connection_sql as sql
+from AbingRobot import dispatcher, DRAGONS, DEV_USERS
+from AbingRobot.modules.helper_funcs import chat_status
+from AbingRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AbingRobot.modules.language import gs
 
 user_admin = chat_status.user_admin
 
