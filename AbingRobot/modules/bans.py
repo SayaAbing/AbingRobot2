@@ -14,10 +14,10 @@ from telegram.utils.helpers import mention_html
 from typing import Optional, List
 from telegram import TelegramError
 
-import SiestaRobot.modules.sql.users_sql as sql
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.filters import CustomFilters
-from SiestaRobot import (
+import AbingRobot.modules.sql.users_sql as sql
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.filters import CustomFilters
+from AbingRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -27,7 +27,7 @@ from SiestaRobot import (
     WOLVES,
     dispatcher,
 )
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from AbingRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -40,10 +40,10 @@ from SiestaRobot.modules.helper_funcs.chat_status import (
     can_delete,
     dev_plus,
 )
-from SiestaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SiestaRobot.modules.helper_funcs.string_handling import extract_time
-from SiestaRobot.modules.log_channel import gloggable, loggable
-from SiestaRobot.modules.language import gs
+from AbingRobot.modules.helper_funcs.extraction import extract_user_and_text
+from AbingRobot.modules.helper_funcs.string_handling import extract_time
+from AbingRobot.modules.log_channel import gloggable, loggable
+from AbingRobot.modules.language import gs
 
 
 
