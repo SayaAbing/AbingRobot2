@@ -1,6 +1,6 @@
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.ex_plugins.dbfunctions import get_couple, save_couple
+from AbingRobot import pbot as app
+from AbingRobot.utils.errors import capture_err
+from AbingRobot.ex_plugins.dbfunctions import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
