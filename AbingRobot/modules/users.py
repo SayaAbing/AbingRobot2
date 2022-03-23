@@ -10,10 +10,10 @@ from telegram.ext import (
     MessageHandler,
 )
 
-import SiestaRobot.modules.sql.users_sql as sql
-from SiestaRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from SiestaRobot.modules.sql.users_sql import get_all_users
+import AbingRobot.modules.sql.users_sql as sql
+from AbingRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from AbingRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from AbingRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
