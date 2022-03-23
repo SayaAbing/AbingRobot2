@@ -6,19 +6,19 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import SiestaRobot.modules.sql.blacklist_sql as sql
-from SiestaRobot import dispatcher, LOGGER
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SiestaRobot.modules.helper_funcs.extraction import extract_text
-from SiestaRobot.modules.helper_funcs.misc import split_message
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.warns import warn
-from SiestaRobot.modules.helper_funcs.string_handling import extract_time
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.sql.approve_sql import is_approved
-from SiestaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SiestaRobot.modules.language import gs
+import AbingRobot.modules.sql.blacklist_sql as sql
+from AbingRobot import dispatcher, LOGGER
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AbingRobot.modules.helper_funcs.extraction import extract_text
+from AbingRobot.modules.helper_funcs.misc import split_message
+from AbingRobot.modules.log_channel import loggable
+from AbingRobot.modules.warns import warn
+from AbingRobot.modules.helper_funcs.string_handling import extract_time
+from AbingRobot.modules.connection import connected
+from AbingRobot.modules.sql.approve_sql import is_approved
+from AbingRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AbingRobot.modules.language import gs
 
 BLACKLIST_GROUP = 11
 
