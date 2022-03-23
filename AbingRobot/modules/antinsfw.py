@@ -2,12 +2,12 @@ from os import remove
 
 from pyrogram import filters
 
-from SiestaRobot import BOT_USERNAME as bn
-from SiestaRobot import pbot, arq
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.utils.permissions import adminsOnly
-from SiestaRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
-from SiestaRobot.utils.filter_groups import nsfw_detect_group
+from AbingRobot import BOT_USERNAME as bn
+from AbingRobot import pbot, arq
+from AbingRobot.utils.errors import capture_err
+from AbingRobot.utils.permissions import adminsOnly
+from AbingRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
+from AbingRobot.utils.filter_groups import nsfw_detect_group
 
 __mod_name__ = "Anti-NSFW​"
 
