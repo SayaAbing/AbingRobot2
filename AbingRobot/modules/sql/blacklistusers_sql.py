@@ -1,6 +1,6 @@
 import threading
 
-from SiestaRobot.modules.sql import BASE, SESSION
+from AbingRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
 
 
