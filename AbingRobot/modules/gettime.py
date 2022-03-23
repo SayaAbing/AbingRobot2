@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from SiestaRobot import TIME_API_KEY, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot import TIME_API_KEY, dispatcher
+from AbingRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
