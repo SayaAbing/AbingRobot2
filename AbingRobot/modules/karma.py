@@ -3,10 +3,10 @@ from pyrogram import filters
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
 
-from SiestaRobot import pbot as app, BOT_ID
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.utils.permissions import adminsOnly
-from SiestaRobot.ex_plugins.dbfunctions import (
+from AbingRobot import pbot as app, BOT_ID
+from AbingRobot.utils.errors import capture_err
+from AbingRobot.utils.permissions import adminsOnly
+from AbingRobot.ex_plugins.dbfunctions import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -16,8 +16,8 @@ from SiestaRobot.ex_plugins.dbfunctions import (
     karma_on,
     update_karma,
 )      
-from SiestaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
-from SiestaRobot import arq
+from AbingRobot.utils.filter_groups import karma_negative_group, karma_positive_group
+from AbingRobot import arq
 
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|pro|cool|good|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎|noob|weak)$"
