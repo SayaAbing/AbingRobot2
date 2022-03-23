@@ -2,8 +2,8 @@ import asyncio
 import time
 from telethon import events
 
-from SiestaRobot import telethn
-from SiestaRobot.modules.helper_funcs.telethn.chatstatus import (
+from AbingRobot import telethn
+from AbingRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
