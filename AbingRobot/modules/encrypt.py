@@ -1,6 +1,6 @@
-from SiestaRobot import telethn as tbot
+from AbingRobot import telethn as tbot
 import os
-from SiestaRobot.events import register
+from AbingRobot.events import register
 import secureme
 
 
