@@ -1,9 +1,9 @@
 import os
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from SiestaRobot import ubot2
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot, TEMP_DOWNLOAD_DIRECTORY, SUPPORT_CHAT
+from AbingRobot import ubot2
+from AbingRobot.events import register
+from AbingRobot import telethn as tbot, TEMP_DOWNLOAD_DIRECTORY, SUPPORT_CHAT
 
 
 @register(pattern="^/kamuii ?(.*)")
