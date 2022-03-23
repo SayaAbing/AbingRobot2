@@ -32,9 +32,9 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from SiestaRobot import aiohttpsession as aiosession
-from SiestaRobot.ex_plugins.dbfunctions import start_restart_stage
-from SiestaRobot.utils.http import get, post
+from AbingRobot import aiohttpsession as aiosession
+from AbingRobot.ex_plugins.dbfunctions import start_restart_stage
+from AbingRobot.utils.http import get, post
 
 
 async def restart(m: Message):
