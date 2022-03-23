@@ -2,12 +2,12 @@ import html
 import random
 import time
 
-import SiestaRobot.modules.fun_strings as fun_strings
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import is_user_admin
-from SiestaRobot.modules.helper_funcs.extraction import extract_user
-from SiestaRobot.modules.language import gs
+import AbingRobot.modules.fun_strings as fun_strings
+from AbingRobot import dispatcher
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.chat_status import is_user_admin
+from AbingRobot.modules.helper_funcs.extraction import extract_user
+from AbingRobot.modules.language import gs
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
