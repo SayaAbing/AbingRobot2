@@ -10,13 +10,13 @@ from pyrogram.types import (
     Message,
 )
 
-from SiestaRobot import pbot as Client
-from SiestaRobot import (
+from AbingRobot import pbot as Client
+from AbingRobot import (
     OWNER_ID as owner_id,
     OWNER_USERNAME as owner_usn,
     SUPPORT_CHAT as log,
 )
-from SiestaRobot.utils.errors import capture_err
+from AbingRobot.utils.errors import capture_err
 
 
 def content(msg: Message) -> [None, str]:
