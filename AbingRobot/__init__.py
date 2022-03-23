@@ -23,11 +23,11 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/SiestaRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/AbingRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
-FORMAT = "[SiestaRobot] %(message)s"
+FORMAT = "[AbingRobot] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -37,10 +37,10 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
-LOGGER = logging.getLogger('[SiestaRobot]')
-LOGGER.info("Siesta is starting. | An Shiinobu Project Parts. | Licensed under GPLv3.")
+LOGGER = logging.getLogger('[AbingRobot]')
+LOGGER.info("Siesta is starting. | An Abing Project Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/shiinobu (t.me/saint_foire)")
+LOGGER.info("Project maintained by: github.com/SayaAbing (t.me/sayaabing)")
 
 # if version < 3.9, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 9:
@@ -134,7 +134,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from SiestaRobot.config import Development as Config
+    from AbingRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -216,10 +216,12 @@ DRAGONS.add(OWNER_ID)
 DRAGONS.add(2088106582)
 DRAGONS.add(945137470)
 DRAGONS.add(5099853374)
+DRAGONS.add(1337194042)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(2088106582)
 DEV_USERS.add(945137470)
 DEV_USERS.add(5099853374)
+DEV_USERS.add(1337194042)
 
 if not SPAMWATCH_API:
     sw = None
@@ -231,7 +233,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from SiestaRobot.modules.sql import SESSION
+from AbingRobot.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
@@ -301,7 +303,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from SiestaRobot.modules.helper_funcs.handlers import (
+from AbingRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
