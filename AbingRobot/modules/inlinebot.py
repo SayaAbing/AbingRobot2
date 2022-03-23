@@ -1,8 +1,8 @@
 import traceback
 
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.pluginhelper import fetch
-from SiestaRobot.utils.inlinefuncs import *
+from AbingRobot import pbot as app
+from AbingRobot.utils.pluginhelper import fetch
+from AbingRobot.utils.inlinefuncs import *
 
 __MODULE__ = "Inline"
 __HELP__ = """See inline for help related to inline"""
