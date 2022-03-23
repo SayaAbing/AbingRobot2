@@ -25,9 +25,9 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from SiestaRobot import REM_BG_API_KEY
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot
+from AbingRobot import REM_BG_API_KEY
+from AbingRobot.events import register
+from AbingRobot import telethn as tbot
 
 REM_BG_API_KEY = "REM_BG_API_KEY"
 TEMP_DOWNLOAD_DIRECTORY = "./"
