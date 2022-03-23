@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import SiestaRobot.modules.sql.blsticker_sql as sql
-from SiestaRobot import LOGGER, dispatcher
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.alternate import send_message
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SiestaRobot.modules.helper_funcs.misc import split_message
-from SiestaRobot.modules.helper_funcs.string_handling import extract_time
+import AbingRobot.modules.sql.blsticker_sql as sql
+from AbingRobot import LOGGER, dispatcher
+from AbingRobot.modules.connection import connected
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.alternate import send_message
+from AbingRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AbingRobot.modules.helper_funcs.misc import split_message
+from AbingRobot.modules.helper_funcs.string_handling import extract_time
 
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.warns import warn
+from AbingRobot.modules.log_channel import loggable
+from AbingRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
