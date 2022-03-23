@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from SiestaRobot import (
+from AbingRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,18 +13,18 @@ from SiestaRobot import (
     WOLVES,
     dispatcher,
 )
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from AbingRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from SiestaRobot.modules.helper_funcs.extraction import extract_user
-from SiestaRobot.modules.log_channel import gloggable
+from AbingRobot.modules.helper_funcs.extraction import extract_user
+from AbingRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "SiestaRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "AbingRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
