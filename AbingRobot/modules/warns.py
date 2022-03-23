@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from SiestaRobot import TIGERS, WOLVES, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from AbingRobot import TIGERS, WOLVES, dispatcher
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from SiestaRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from SiestaRobot.modules.helper_funcs.extraction import (
+from AbingRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from SiestaRobot.modules.helper_funcs.filters import CustomFilters
-from SiestaRobot.modules.helper_funcs.misc import split_message
-from SiestaRobot.modules.helper_funcs.string_handling import split_quotes
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.sql import warns_sql as sql
+from AbingRobot.modules.helper_funcs.filters import CustomFilters
+from AbingRobot.modules.helper_funcs.misc import split_message
+from AbingRobot.modules.helper_funcs.string_handling import split_quotes
+from AbingRobot.modules.log_channel import loggable
+from AbingRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,8 +45,8 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from SiestaRobot.modules.sql.approve_sql import is_approved
-from SiestaRobot.modules.language import gs
+from AbingRobot.modules.sql.approve_sql import is_approved
+from AbingRobot.modules.language import gs
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
