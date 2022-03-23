@@ -1,7 +1,7 @@
 import speedtest
-from SiestaRobot import DEV_USERS, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus
+from AbingRobot import DEV_USERS, dispatcher
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
