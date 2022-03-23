@@ -22,21 +22,21 @@ from pyrogram.types import (CallbackQuery,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from SiestaRobot import (
+from AbingRobot import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
     ubot2,
 )
-from SiestaRobot import pbot as app 
-from SiestaRobot import arq
-from SiestaRobot.services.keyboard import Ikb
-from SiestaRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from SiestaRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
-from SiestaRobot.services.types import InlineQueryResultCachedDocument
-from SiestaRobot.modules.info import get_chat_info, get_user_info
-from SiestaRobot.utils.functions import test_speedtest
-from SiestaRobot.utils.pastebin import paste
+from AbingRobot import pbot as app 
+from AbingRobot import arq
+from AbingRobot.services.keyboard import Ikb
+from AbingRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
+from AbingRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
+from AbingRobot.services.types import InlineQueryResultCachedDocument
+from AbingRobot.modules.info import get_chat_info, get_user_info
+from AbingRobot.utils.functions import test_speedtest
+from AbingRobot.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = EVENT_LOGS
 
@@ -101,7 +101,7 @@ async def inline_help_func(__HELP__):
             input_message_content=InputTextMessageContent(
                 "**__Click A Button To Get Started.__**"
             ),
-            thumb_url="https://telegra.ph/file/5755d25e718851cdecacb.jpg",
+            thumb_url="https://telegra.ph/file/23896028168d6e96f9255.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -114,27 +114,27 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/Siestaxbot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/AbingxRoBot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[Siesta Robot ❤️](https://t.me/machinaxsupport):**
+**[Abing Robot ⚡️](https://t.me/AbingSupport):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [OWNER BOT](t.me/saint_foire)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [OWNER BOT](t.me/sayaabing)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/5755d25e718851cdecacb.jpg",
+            thumb_url="https://telegra.ph/file/23896028168d6e96f9255.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
