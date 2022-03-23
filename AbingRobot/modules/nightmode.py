@@ -1,5 +1,5 @@
 import os
-from SiestaRobot.modules.sql.night_mode_sql import (
+from AbingRobot.modules.sql.night_mode_sql import (
     add_nightmode,
     rmnightmode,
     get_all_chat_id,
@@ -8,8 +8,8 @@ from SiestaRobot.modules.sql.night_mode_sql import (
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot, OWNER_ID
+from AbingRobot.events import register
+from AbingRobot import telethn as tbot, OWNER_ID
 from telethon import Button, custom, events
 
 hehes = ChatBannedRights(
