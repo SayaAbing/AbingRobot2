@@ -13,24 +13,24 @@ from telegram.ext import (
     Filters,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from SiestaRobot import dispatcher, LOGGER, DRAGONS
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin
-from SiestaRobot.modules.helper_funcs.extraction import extract_text
-from SiestaRobot.modules.helper_funcs.filters import CustomFilters
-from SiestaRobot.modules.helper_funcs.misc import build_keyboard_parser
-from SiestaRobot.modules.helper_funcs.msg_types import get_filter_type
-from SiestaRobot.modules.helper_funcs.string_handling import (
+from AbingRobot import dispatcher, LOGGER, DRAGONS
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from AbingRobot.modules.helper_funcs.chat_status import user_admin
+from AbingRobot.modules.helper_funcs.extraction import extract_text
+from AbingRobot.modules.helper_funcs.filters import CustomFilters
+from AbingRobot.modules.helper_funcs.misc import build_keyboard_parser
+from AbingRobot.modules.helper_funcs.msg_types import get_filter_type
+from AbingRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from SiestaRobot.modules.sql import cust_filters_sql as sql
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SiestaRobot.modules.language import gs
+from AbingRobot.modules.sql import cust_filters_sql as sql
+from AbingRobot.modules.connection import connected
+from AbingRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AbingRobot.modules.language import gs
 
 HANDLER_GROUP = 10
 
