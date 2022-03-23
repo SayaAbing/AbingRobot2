@@ -5,8 +5,8 @@ from telethon.utils import get_input_location
 import flag
 import html, os
 from countryinfo import CountryInfo
-from SiestaRobot import telethn as borg
-from SiestaRobot.events import register
+from AbingRobot import telethn as borg
+from AbingRobot.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By Siesta Robot ✨.</b>
+Gathered By Abing Robot ⚡.</b>
 """
 
     await borg.send_message(
