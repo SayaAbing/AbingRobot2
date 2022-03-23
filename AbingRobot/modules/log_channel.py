@@ -1,7 +1,7 @@
 from datetime import datetime
 from functools import wraps
 from telegram.ext import CallbackContext
-from SiestaRobot.modules.helper_funcs.misc import is_module_loaded
+from AbingRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -11,10 +11,10 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from SiestaRobot import EVENT_LOGS, LOGGER, dispatcher
-    from SiestaRobot.modules.helper_funcs.chat_status import user_admin
-    from SiestaRobot.modules.sql import log_channel_sql as sql
-    from SiestaRobot.modules.language import gs
+    from AbingRobot import EVENT_LOGS, LOGGER, dispatcher
+    from AbingRobot.modules.helper_funcs.chat_status import user_admin
+    from AbingRobot.modules.sql import log_channel_sql as sql
+    from AbingRobot.modules.language import gs
 
     def loggable(func):
         @wraps(func)
