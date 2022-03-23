@@ -1,9 +1,9 @@
 import html
 import random
-import SiestaRobot.modules.truth_and_dare_string as truth_and_dare_string
-from SiestaRobot import dispatcher
+import AbingRobot.modules.truth_and_dare_string as truth_and_dare_string
+from AbingRobot import dispatcher
 from telegram import ParseMode, Update, Bot
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 
