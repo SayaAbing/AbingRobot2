@@ -4,9 +4,9 @@ from pyrogram import __version__ as z
 from telethon import __version__ as s
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
-from SiestaRobot import pbot
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.utils.functions import make_carbon
+from AbingRobot import pbot
+from AbingRobot.utils.errors import capture_err
+from AbingRobot.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
@@ -24,15 +24,15 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/31c56fb53884915fec558.jpg"
+MEMEK = "https://telegra.ph/file/23896028168d6e96f9255.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Siesta Robot** ✨ 
+        caption=f"""⚡ **Hey I'm Abing Robot** ⚡ 
 
-**Owner repo : [Vain](https://t.me/saint_foire)**
+**Owner repo : [Abing](https://t.me/sayaabing)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -44,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/shiinobu/SiestaRobot"), 
+                        "Repo", url="https://github.com/SayaAbing/AbingRobot"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/machinaxsupport")
+                        "Support", url="https://t.me/AbingSupport")
                 ]
             ]
         )
