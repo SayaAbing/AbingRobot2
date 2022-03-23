@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from SiestaRobot import LOGGER, dispatcher
-from SiestaRobot.modules.disable import DisableAbleMessageHandler
-from SiestaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from AbingRobot import LOGGER, dispatcher
+from AbingRobot.modules.disable import DisableAbleMessageHandler
+from AbingRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
