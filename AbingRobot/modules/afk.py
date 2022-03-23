@@ -1,13 +1,13 @@
 import random, html
 
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.disable import (
+from AbingRobot import dispatcher
+from AbingRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from SiestaRobot.modules.sql import afk_sql as sql
-from SiestaRobot.modules.users import get_user_id
-from SiestaRobot.modules.language import gs
+from AbingRobot.modules.sql import afk_sql as sql
+from AbingRobot.modules.users import get_user_id
+from AbingRobot.modules.language import gs
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
