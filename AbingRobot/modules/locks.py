@@ -1,4 +1,4 @@
-import SiestaRobot.modules.sql.locks_sql as sql
+import AbingRobot.modules.sql.locks_sql as sql
 import html
 import ast
 
@@ -9,20 +9,20 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 from alphabet_detector import AlphabetDetector
-from SiestaRobot import dispatcher, DRAGONS, LOGGER
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from AbingRobot import dispatcher, DRAGONS, LOGGER
+from AbingRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from SiestaRobot.modules.sql.approve_sql import is_approved
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SiestaRobot.modules.language import gs
+from AbingRobot.modules.sql.approve_sql import is_approved
+from AbingRobot.modules.log_channel import loggable
+from AbingRobot.modules.connection import connected
+from AbingRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AbingRobot.modules.language import gs
 
 ad = AlphabetDetector()
 
