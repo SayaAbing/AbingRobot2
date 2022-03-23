@@ -1,5 +1,5 @@
 from envparse import env
-from SiestaRobot import LOGGER
+from AbingRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
