@@ -1,7 +1,7 @@
 import threading
 
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.sql import BASE, SESSION
+from AbingRobot import dispatcher
+from AbingRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
