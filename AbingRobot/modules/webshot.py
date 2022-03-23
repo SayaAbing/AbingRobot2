@@ -20,8 +20,8 @@ SOFTWARE.
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.errors import capture_err
+from AbingRobot import pbot as app
+from AbingRobot.utils.errors import capture_err
 
 __mod_name__ = "Webshot​"
 
