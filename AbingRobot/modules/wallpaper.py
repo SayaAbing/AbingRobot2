@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from SiestaRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
+from AbingRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from AbingRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext
 
