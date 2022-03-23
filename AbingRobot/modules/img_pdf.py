@@ -26,9 +26,9 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.services.sections import section
+from AbingRobot import pbot as app
+from AbingRobot.utils.errors import capture_err
+from AbingRobot.services.sections import section
 
 
 async def convert(
