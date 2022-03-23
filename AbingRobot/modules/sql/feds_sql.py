@@ -1,7 +1,7 @@
 import ast
 import threading
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.sql import BASE, SESSION
+from AbingRobot import dispatcher
+from AbingRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, Integer, BigInteger
 from telegram.error import BadRequest, Unauthorized
 
