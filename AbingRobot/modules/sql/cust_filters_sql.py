@@ -1,7 +1,7 @@
 import threading
 from sqlalchemy import Column, String, UnicodeText, Boolean, distinct, func, Integer
-from SiestaRobot.modules.helper_funcs.msg_types import Types
-from SiestaRobot.modules.sql import BASE, SESSION
+from AbingRobot.modules.helper_funcs.msg_types import Types
+from AbingRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
