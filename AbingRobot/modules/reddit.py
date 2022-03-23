@@ -19,8 +19,8 @@ SOFTWARE.
 """
 from pyrogram import filters
 
-from SiestaRobot import pbot as app, arq
-from SiestaRobot.utils.errors import capture_err
+from AbingRobot import pbot as app, arq
+from AbingRobot.utils.errors import capture_err
 
 __mod_name__ = "Reddit"
 
