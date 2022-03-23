@@ -10,9 +10,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from SiestaRobot import *
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot
+from AbingRobot import *
+from AbingRobot.events import register
+from AbingRobot import telethn as tbot
 
 
 async def is_register_admin(chat, user):
