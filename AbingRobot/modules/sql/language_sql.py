@@ -1,7 +1,7 @@
 import threading
 
 from sqlalchemy import Column, String, UnicodeText
-from SiestaRobot.modules.sql import SESSION, BASE
+from AbingRobot.modules.sql import SESSION, BASE
 
 
 class ChatLangs(BASE):
