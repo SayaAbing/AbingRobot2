@@ -1,4 +1,4 @@
-from SiestaRobot import LOAD, NO_LOAD, LOGGER
+from AbingRobot import LOAD, NO_LOAD, LOGGER
 import sys
 
 
