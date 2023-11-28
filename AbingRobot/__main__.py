@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/AbingxRoBot?startgroup=new"),
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Ab1ngxRoBot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -417,7 +417,7 @@ def abing_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/AbingxRoBot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Ab1ngxRoBot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -459,7 +459,7 @@ def abing_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/AbingSupport"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/Ab1ngSupport"),
                         InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/AbingProject"),
                     ],
                     [
@@ -477,8 +477,8 @@ def abing_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Vain", url="https://github.com/SayaAbing"),
-                        InlineKeyboardButoon(text="Abing", url="https://github.com/shiinobu"),
+                        InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
+                        InlineKeyboardButoon(text="Abing", url="https://github.com/SayaAbing"),
                     ],
                     [
                         InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
@@ -529,7 +529,7 @@ def Source_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/AbingxRoBot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Ab1ngxRoBot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -768,7 +768,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1337194042:
+        if OWNER_ID != 1715037142:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
